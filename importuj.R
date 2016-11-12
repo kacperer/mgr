@@ -29,6 +29,18 @@ przygotowanie <- rep(0, dim(dane)[1])
 przygotowanie = replace(przygotowanie, posilki[,3]==1, 0.5)
 przygotowanie = replace(przygotowanie, posilki[,1]==2, 1)
 
+czestotliwosc <- matrix(c("2-3 razy dziennie", 2.5,
+                  "1 raz dziennie", 1,
+                  "1 w miesiącu", 1/30,
+                  "1 w tygodniu", 4/30,
+                  "2-3 razy w miesiącu", 2.5/30,
+                  "2-3 razy w tygodniu", 4*2.5/30,
+                  "4-5 razy w tygodniu", 4*4.5/30,
+                  "6 razy w tygodniu", 4*6/30,
+                  "Nigdy", 0,
+                  "Rzadziej niż 1 raz w miesiącu", 1/90), ncol=2, byrow = T)
+czestotliwosc = as.data.frame(czestotliwosc)
+
 # przelicz("2-3 razy dziennie", 2.5)
 # przelicz("1 raz dziennie", 1)
 # przelicz("1 w miesiącu", 1/30)
