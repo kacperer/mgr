@@ -1,3 +1,4 @@
+source("przelicz.R", encoding = "UTF-8")
 dane <- read.csv("data.csv", fileEncoding = "UTF-8")
 dane = dane[,2:229]
 #write.table(names(dane), "dane.csv", sep=",")
@@ -29,7 +30,10 @@ przygotowanie <- rep(0, dim(dane)[1])
 przygotowanie = replace(przygotowanie, posilki[,3]==1, 0.5)
 przygotowanie = replace(przygotowanie, posilki[,1]==2, 1)
 
-#spozycie = dane[,68]*dane[,69]*dane[,70]
+for(i in 1:dim(dane)[2])
+  dane[,i] <- przelicz(i)
+
+#spozycie = dane[,68]*dane*dane[,70]
 #spozycie = cbind(spozycie, dane[,98]*dane[,99]*dane[,100])
 #spozycie = cbind(spozycie, 180*dane[,125])
 #spozycie = cbind(spozycie, 240*dane[,147])
