@@ -32,11 +32,7 @@ wartosci <- c("2-3 razy dziennie" = 2.5,
               "Nie spożywam" = 0,
               "Nie kupuję" = 0)
 przelicz <- function(kolumna){
-  badanie = wartosci[as.character(dane[,kolumna])]
-  if(sum(is.na(badanie)) > 1)
-    dane[,kolumna]
-  else
-    badanie
+    wartosci[as.character(dane[,kolumna])]
 }
 # dane[,68] <- przelicz(dane[,68])
 # dane[,70] <- przelicz(dane[,70])
