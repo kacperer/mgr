@@ -30,16 +30,48 @@ przygotowanie <- rep(0, dim(dane)[1])
 przygotowanie = replace(przygotowanie, posilki[,3]==1, 0.5)
 przygotowanie = replace(przygotowanie, posilki[,1]==2, 1)
 
-for(i in c(68,70,98,100,125,147,169:176,191:198,214:221))
+for(i in c(1,3:5,19,21,68,70:76,83:88,98,100:102,108:115,125:127,133:137,147:149,155:157,166:176,189:198,212:221,223))
   dane[,i] <- przelicz(i)
+
+dane[,5][is.na(dane[,5])] <- 0
+dane[,21][is.na(dane[,21])] <- 1
 
 spozycie = dane[,68]*dane[,69]*dane[,70]
 spozycie = cbind(spozycie, dane[,98]*dane[,99]*dane[,100])
-spozycie = cbind(spozycie, 180*dane[,125])
-spozycie = cbind(spozycie, 240*dane[,147])
-spozycie = cbind(spozycie, as.vector(apply(dane[,169:176], 1, mean)))
-spozycie = cbind(spozycie, as.vector(apply(dane[,191:198], 1, mean)))
-spozycie = cbind(spozycie, as.vector(apply(dane[,214:221], 1, mean)))
+spozycie = cbind(spozycie, dane[,125]*180)
+spozycie = cbind(spozycie, dane[,147]*240)
+spozycie = cbind(spozycie, dane[,166]*as.vector(apply(dane[,169:176], 1, mean, na.rm = T)))
+spozycie = cbind(spozycie, dane[,189]*as.vector(apply(dane[,191:198], 1, mean, na.rm = T)))
+spozycie = cbind(spozycie, dane[,212]*dane[,222]*as.vector(apply(dane[,214:221], 1, mean, na.rm = T)))
+spozycie[is.nan(spozycie)] <- 0
+
+opakowanie = as.vector(apply(dane[,73:76], 1, mean, na.rm = T))
+opakowanie = cbind(opakowanie, dane[,223])
+opakowanie[is.nan(opakowanie)] <- NA
+
+dane[,c(83:88,108:115,133:137,155:157)][is.na(dane[,c(83:88,108:115,133:137,155:157)])] <- 0
+dane[,89] = as.numeric(dane[,89])
+dane[,116] = as.numeric(dane[,116])
+dane[,138] = as.numeric(dane[,138])
+dane[,158] = as.numeric(dane[,158])
+dane[,c(89,116,138,158)][dane[,c(89,116,138,158)]==1] <- 0
+dane[,c(89,116,138,158)][dane[,c(89,116,138,158)]>1] <- 1
+
+produkty = as.vector(apply(dane[,83:89], 1, mean))
+produkty = cbind(produkty, as.vector(apply(dane[,108:116], 1, mean, na.rm = T)))
+produkty = cbind(produkty, as.vector(apply(dane[,133:138], 1, mean, na.rm = T)))
+produkty = cbind(produkty, as.vector(apply(dane[,155:158], 1, mean, na.rm = T)))
+
+dane[,3] = normalize(dane[,3])
+for(i in 1:7)
+  spozycie[,i] = normalize(spozycie[,i])
+  spozycie[,i]
+for(i in 1:2)
+  opakowanie[,i][!is.na(opakowanie[,i])] = normalize(opakowanie[,i][!is.na(opakowanie[,i])])
+  opakowanie[,i]
+for(i in 1:4)
+  produkty[,i] = normalize(produkty[,i])
+  produkty[,i]
 
 dane = data.frame(dane[,1:5],
                  zatrudnienie,
@@ -48,17 +80,231 @@ dane = data.frame(dane[,1:5],
                  przygotowanie,
                  dane[,c(19:21, 23:67)],
                  spozycie[,1],
-                 dane[,c(71:88, 90:97)],
+                 dane[,c(71:72)],
+                 opakowanie[,1],
+                 dane[,c(78:82)],
+                 produkty[,1],
+                 dane[,c(90:97)],
                  spozycie[,2],
-                 dane[,c(101:115, 117:124)],
+                 dane[,c(101:107)],
+                 produkty[,2],
+                 dane[,c(117:124)],
                  spozycie[,3],
-                 dane[,c(126:137, 139:146)],
+                 dane[,c(126:132)],
+                 produkty[,3],
+                 dane[,c(139:146)],
                  spozycie[,4],
-                 dane[,c(148:157, 159:165)],
+                 dane[,c(148:154)],
+                 produkty[,4],
+                 dane[,c(159:165)],
                  spozycie[,5],
                  dane[,c(167:168, 177:188, 190)],
                  spozycie[,6],
                  dane[,c(199:211, 213)],
                  spozycie[,7],
-                 dane[,c(222:228)])
-#names(dane)[1:length(dane)]
+                 opakowanie[,2],
+                 dane[,c(224:228)])
+names(dane) = c("metryczka.plec",
+                "metryczka.wiek",
+                "metryczka.miejsce",
+                "metryczka.wyksztalcenie",
+                "metryczka.nauka",
+                "metryczka.praca",
+                "metryczka.osoby",
+                "metryczka.dzieci",
+                "metryczka.zakupy",
+                "metryczka.przygotowanie",
+                "metryczka.sytuacja",
+                "metryczka.wiedza",
+                "metryczka.dieta",
+                "fcq.dieta_kalorie",
+                "fcq.cena_wartosc",
+                "fcq.eko_opakowana",
+                "fcq.eko_produkowana",
+                "fcq.dieta_tluszcz",
+                "fcq.pol_pochodzenie",
+                "fcq.eko_bezgmo",
+                "fcq.dieta_wit-i-min",
+                "fcq.dieta_bezdodatkow",
+                "fcq.dieta_odzywcza",
+                "fcq.dieta_bialko",
+                "fcq.dieta_naturalna",
+                "fcq.hed_zdziecinstwa",
+                "fcq.hed_odprezajaca",
+                "fcq.hed_wygodna",
+                "frl.nowe_zawartosc",
+                "frl.dieta_odzywcza",
+                "frl.cena_info",
+                "frl.nowe_etykiety",
+                "frl.dieta_naturalna",
+                "frl.dieta_bezdodatkow",
+                "frl.dieta_wartosc",
+                "fns.nowe_ufnosc",
+                "fns.nowe_przyjecia",
+                "cet.pol_bezrobocie",
+                "cet.pol_niedostepne",
+                "cet.pol_nieprodukowane",
+                "mgr.nowe_marki",
+                "mgr.hed_przepis",
+                "mgr.hed_przyjemnosc",
+                "mgr.hed_niesmaczna",
+                "mgr.pol_swieza",
+                "mgr.pol_tania",
+                "mgr.pol_smaczna",
+                "mgr.nowe_sklad",
+                "mgr.hed_wrazenie",
+                "mgr.hed_zakupy",
+                "mgr.hed_szybko",
+                "ziemniak.cena",
+                "ziemniak.miejsce",
+                "ziemniak.swiezosc",
+                "ziemniak.rodzaj",
+                "ziemniak.kraj",
+                "ziemniak.barwa",
+                "ziemniak.wyglad",
+                "ziemniak.spozycie",
+                "ziemniak.okres",
+                "ziemniak.sklep",
+                "ziemniak.opakowanie",
+                "ziemniak.obrobka",
+                "ziemniak.potrawy",
+                "ziemniak.zdrowotnosc",
+                "ziemniak.smak",
+                "ziemniak.jakosc",
+                "ziemniak.produkty",
+                "pomidor.cena",
+                "pomidor.miejsce",
+                "pomidor.swiezosc",
+                "pomidor.rodzaj",
+                "pomidor.kraj",
+                "pomidor.barwa",
+                "pomidor.slodkosc",
+                "pomidor.miekkosc",
+                "pomidor.spozycie",
+                "pomidor.okres",
+                "pomidor.sklep",
+                "pomidor.obrobka",
+                "pomidor.potrawy",
+                "pomidor.zdrowotnosc",
+                "pomidor.smak",
+                "pomidor.jakosc",
+                "pomidor.produkty",
+                "jablko.cena",
+                "jablko.miejsce",
+                "jablko.swiezosc",
+                "jablko.rodzaj",
+                "jablko.kraj",
+                "jablko.barwa",
+                "jablko.miekkosc",
+                "jablko.slodkosc",
+                "jablko.spozycie",
+                "jablko.okres",
+                "jablko.sklep",
+                "jablko.obrobka",
+                "jablko.potrawy",
+                "jablko.zdrowotnosc",
+                "jablko.smak",
+                "jablko.jakosc",
+                "jablko.produkty",
+                "pomarancza.cena",
+                "pomarancza.miejsce",
+                "pomarancza.swiezosc",
+                "pomarancza.rodzaj",
+                "pomarancza.kraj",
+                "pomarancza.barwa",
+                "pomarancza.miekkosc",
+                "pomarancza.slodkosc",
+                "pomarancza.spozycie",
+                "pomarancza.okres",
+                "pomarancza.sklep",
+                "pomarancza.obrobka",
+                "pomarancza.potrawy",
+                "pomarancza.zdrowotnosc",
+                "pomarancza.smak",
+                "pomarancza.jakosc",
+                "pomarancza.produkty",
+                "makaron.cena",
+                "makaron.miejsce",
+                "makaron.swiezosc",
+                "makaron.rodzaj",
+                "makaron.kraj",
+                "makaron.barwa",
+                "makaron.marka",
+                "makaron.spozycie",
+                "makaron.okres",
+                "makaron.sklep",
+                "makaron.obrobka",
+                "makaron.potrawy",
+                "makaron.zdrowotnosc",
+                "makaron.smak",
+                "makaron.jakosc",
+                "platki.cena",
+                "platki.miejsce",
+                "platki.swiezosc",
+                "platki.rodzaj",
+                "platki.kraj",
+                "platki.blonnik",
+                "platki.marka",
+                "platki.sklep",
+                "platki.spozycie",
+                "platki.obrobka",
+                "platki.potrawy",
+                "platki.zdrowotnosc",
+                "platki.smak",
+                "platki.jakosc",
+                "pieczywo.cena",
+                "pieczywo.miejsce",
+                "pieczywo.swiezosc",
+                "pieczywo.rodzaj",
+                "pieczywo.kraj",
+                "pieczywo.barwa",
+                "pieczywo.ziarna",
+                "pieczywo.blonnik",
+                "pieczywo.sklep",
+                "pieczywo.spozycie",
+                "pieczywo.opakowanie",
+                "pieczywo.obrobka",
+                "pieczywo.potrawy",
+                "pieczywo.zdrowotnosc",
+                "pieczywo.smak",
+                "pieczywo.jakosc")
+for(i in c(52:58,61,62)){
+  dane[,i][dane[,59] == 0] <- NA
+  dane[,i][is.na(dane[,61])] <- NA
+  dane[,i][is.na(dane[,62])] <- NA
+  dane[,i]
+}
+for(i in c(69:76,79)){
+  dane[,i][dane[,77] == 0] <- NA
+  dane[,i][is.na(dane[,79])] <- NA
+  dane[,i]
+}
+for(i in c(86:93,96)){
+  dane[,i][dane[,94] == 0] <- NA
+  dane[,i][is.na(dane[,96])] <- NA
+  dane[,i]
+}
+for(i in c(103:110,113)){
+  dane[,i][dane[,111] == 0] <- NA
+  dane[,i][is.na(dane[,113])] <- NA
+  dane[,i]
+}
+for(i in c(120:126,129)){
+  dane[,i][dane[,127] == 0] <- NA
+  dane[,i][is.na(dane[,129])] <- NA
+  dane[,i]
+}
+for(i in 135:142){
+  dane[,i][is.na(dane[,142])] <- NA
+  dane[,i][dane[,143] == 0] <- NA
+  dane[,i]
+}
+for(i in 149:157){
+  dane[,i][is.na(dane[,157])] <- NA
+  dane[,i][dane[,158] == 0] <- NA
+  dane[,i]
+}
+dane[,14:51] = przeskaluj(dane[,14:51], 7, 3)
+dane[,c(52:58,69:76,86:93,103:110,120:126,135:141,149:156)] = przeskaluj(dane[,c(52:58,69:76,86:93,103:110,120:126,135:141,149:156)], 11, 5)
+dane[,c(12,63:67,80:84,97:101,114:118,130:134,144:148,160:164)] = przeskaluj(dane[,c(12,63:67,80:84,97:101,114:118,130:134,144:148,160:164)], 5, 3)
+write.table(dane, "zestawienie.csv", sep=",")
