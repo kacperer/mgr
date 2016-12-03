@@ -1,4 +1,4 @@
-# Wczytanie danych po wstępnej obróbki
+# Wczytanie danych po wstępnej obróbce
 source("preprocessing.R", encoding = "UTF-8")
 
 wyniki0 <- data.frame(Nr_A=NA,

@@ -2,7 +2,7 @@
 source("przelicz.R", encoding = "UTF-8")
 source("przeskaluj.R", encoding = "UTF-8")
 source("normalizuj.R", encoding = "UTF-8")
-dane <- read.csv("dane0.csv", sep=",", fileEncoding = "UTF-8")
+dane <- read.csv("odpowiedzi.csv", sep=",", fileEncoding = "UTF-8")
 dane = dane[,2:229]
 
 # Ograniczenie grupy badanej do osób do 30 roku życia
@@ -13,7 +13,7 @@ for(i in 1:dim(dane)[2]){
 }
 dane = na.omit(dane)
 
-# Przeliczenie danych na wartości liczbowe normalizowane
+# Przeliczenie danych na wartości liczbowe
 # - konsolidacja i normalizacja wartości kolumn z odpowiedziami dotyczącymi zatrudnienia
 praca = as.numeric(dane[,6])
 praca = cbind(praca, as.numeric(dane[,7]))
@@ -69,13 +69,11 @@ spozycie = cbind(spozycie, dane[,189]*as.vector(apply(dane[,191:198], 1, mean, n
 spozycie = cbind(spozycie, dane[,212]*dane[,222]*as.vector(apply(dane[,214:221], 1, mean, na.rm = T)))
 spozycie[is.nan(spozycie)] <- 0
 
-# - konsolidacja wartości kolumn z odpowiedziami dotyczącymi preferowanych opakowań
+# - konsolidacja wartości kolumn z odpowiedziami wielokrotnego wyboru
 opakowanie = as.vector(apply(dane[,73:76], 1, mean, na.rm = T))
 opakowanie = cbind(opakowanie, dane[,223])
 opakowanie[is.nan(opakowanie)] <- NA
 
-# - zamiana danych tekstowych dotyczących preferowanych produktów pochodzących z surowców na liczbowe
-#   i konsolidacja wartości kolumn
 dane[,c(83:88,108:115,133:137,155:157)][is.na(dane[,c(83:88,108:115,133:137,155:157)])] <- 0
 dane[,89] = as.numeric(dane[,89])
 dane[,116] = as.numeric(dane[,116])
@@ -88,26 +86,6 @@ produkty = as.vector(apply(dane[,83:89], 1, mean))
 produkty = cbind(produkty, as.vector(apply(dane[,108:116], 1, mean, na.rm = T)))
 produkty = cbind(produkty, as.vector(apply(dane[,133:138], 1, mean, na.rm = T)))
 produkty = cbind(produkty, as.vector(apply(dane[,155:158], 1, mean, na.rm = T)))
-
-# - normalizacja danych liczbowych dotyczących
-#   wieku, miejsca zamieszkania, spożycia,
-#   preferowanych opakowań i preferowanych produktów pochodzących z surowców
-dane[,2] = normalizuj(dane[,2])
-dane[,3] = normalizuj(dane[,3])
-for(i in 1:7){
-  spozycie[,i] = normalizuj(spozycie[,i])
-  spozycie[,i][spozycie[,i] > 0 & spozycie[,i] <= 0.05] <- 0.05
-  spozycie[,i][spozycie[,i] > 0.05] <- round(spozycie[,i][spozycie[,i] > 0.05],1)
-  spozycie[,i]
-}
-for(i in 1:2){
-  opakowanie[,i][!is.na(opakowanie[,i])] = normalizuj(opakowanie[,i][!is.na(opakowanie[,i])])
-  opakowanie[,i]
-}
-for(i in 1:4){
-  produkty[,i] = normalizuj(produkty[,i])
-  produkty[,i]
-}
 
 # Scalanie przeliczonych danych w jedną bazę z nadaniem nazw kolumn
 dane = data.frame(dane[,1:5],
@@ -344,13 +322,30 @@ for(i in 149:157){
   dane[,i][dane[,158] == 0] <- NA
   dane[,i]
 }
+# Eksport bazy danych przed normalizacją
+write.table(dane, "liczbowe.csv", sep=",")
 
-# Normalizacja z przeskalowaniem danych liczbowych na potrzeby analizy statystycznej wg warunków określonych w przeskaluj.R
+# Normalizacja danych liczbowych
+# i przeskalowanie danych liczbowych na potrzeby analizy statystycznej wg warunków określonych w przeskaluj.R
+for(i in c(59,77,94,111,127,143,158)){
+    dane[,i] = normalizuj(dane[,i])
+    dane[,i][dane[,i] > 0 & dane[,i] <= 0.05] <- 0.05
+    dane[,i][dane[,i] > 0.05] <- round(dane[,i][dane[,i] > 0.05],1)
+    dane[,i]
+}
+for(i in c(62,159)){
+  dane[,i][!is.na(dane[,i])] = normalizuj(dane[,i][!is.na(dane[,i])])
+  dane[,i]
+}
+for(i in c(2,3,68,85,102,119)){
+  dane[,i] = normalizuj(dane[,i])
+  dane[,i]
+}
 dane[,7] = przeskaluj(dane[,7], 10, 5)
 dane[,8] = przeskaluj(dane[,8], 10, 4)
 dane[,14:51] = przeskaluj(dane[,14:51], 7, 3)
 dane[,c(52:58,69:76,86:93,103:110,120:126,135:141,149:156)] = przeskaluj(dane[,c(52:58,69:76,86:93,103:110,120:126,135:141,149:156)], 11, 5)
 dane[,c(12,63:67,80:84,97:101,114:118,130:134,144:148,160:164)] = przeskaluj(dane[,c(12,63:67,80:84,97:101,114:118,130:134,144:148,160:164)], 5, 3)
 
-# Eksport bazy danych do pliku
-write.table(dane, "dane1.csv", sep=",")
+# Eksport bazy danych po normalizacji i przeskalowaniu do pliku
+write.table(dane, "statystyczne.csv", sep=",")
