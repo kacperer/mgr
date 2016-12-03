@@ -90,17 +90,24 @@ produkty = cbind(produkty, as.vector(apply(dane[,133:138], 1, mean, na.rm = T)))
 produkty = cbind(produkty, as.vector(apply(dane[,155:158], 1, mean, na.rm = T)))
 
 # - normalizacja danych liczbowych dotyczących
-#   miejsca zamieszkania, spożycia, preferowanych opakowań i preferowanych produktów pochodzących z surowców
+#   wieku, miejsca zamieszkania, spożycia,
+#   preferowanych opakowań i preferowanych produktów pochodzących z surowców
+dane[,2] = normalizuj(dane[,2])
 dane[,3] = normalizuj(dane[,3])
-for(i in 1:7)
+for(i in 1:7){
   spozycie[,i] = normalizuj(spozycie[,i])
+  spozycie[,i][spozycie[,i] > 0 & spozycie[,i] <= 0.05] <- 0.05
+  spozycie[,i][spozycie[,i] > 0.05] <- round(spozycie[,i][spozycie[,i] > 0.05],1)
   spozycie[,i]
-for(i in 1:2)
+}
+for(i in 1:2){
   opakowanie[,i][!is.na(opakowanie[,i])] = normalizuj(opakowanie[,i][!is.na(opakowanie[,i])])
   opakowanie[,i]
-for(i in 1:4)
+}
+for(i in 1:4){
   produkty[,i] = normalizuj(produkty[,i])
   produkty[,i]
+}
 
 # Scalanie przeliczonych danych w jedną bazę z nadaniem nazw kolumn
 dane = data.frame(dane[,1:5],
@@ -338,7 +345,9 @@ for(i in 149:157){
   dane[,i]
 }
 
-# Przeskalowanie danych liczbowych na potrzeby analizy statystycznej wg warunków określonych w przeskaluj.R
+# Normalizacja z przeskalowaniem danych liczbowych na potrzeby analizy statystycznej wg warunków określonych w przeskaluj.R
+dane[,7] = przeskaluj(dane[,7], 10, 5)
+dane[,8] = przeskaluj(dane[,8], 10, 4)
 dane[,14:51] = przeskaluj(dane[,14:51], 7, 3)
 dane[,c(52:58,69:76,86:93,103:110,120:126,135:141,149:156)] = przeskaluj(dane[,c(52:58,69:76,86:93,103:110,120:126,135:141,149:156)], 11, 5)
 dane[,c(12,63:67,80:84,97:101,114:118,130:134,144:148,160:164)] = przeskaluj(dane[,c(12,63:67,80:84,97:101,114:118,130:134,144:148,160:164)], 5, 3)

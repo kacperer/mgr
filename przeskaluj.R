@@ -8,6 +8,19 @@ przeskaluj <- function(x, stara, nowa){
     x = replace(x, x>=6 & x<=8, 0.75)
     x = replace(x, x>8, 1)
   }
+  else if(stara == 10 & nowa == 5)
+  {
+    x = replace(x, x>1 & x<=3, 0.25)
+    x = replace(x, x>3 & x<=6, 0.5)
+    x = replace(x, x>6 & x<=10, 0.75)
+    x = replace(x, x>10, 1)
+  }
+  else if(stara == 10 & nowa == 4)
+  {
+    x = replace(x, x>0 & x<=2, 1/3)
+    x = replace(x, x>2 & x<=6, 2/3)
+    x = replace(x, x>6, 1)
+  }
   else if(stara == 7 & nowa == 3)  
   {
     x = replace(x, x<3, 0)
