@@ -40,7 +40,7 @@ for (i in 1:dim(dane)[2]){
   }
 }
 wyniki0=na.omit(wyniki0)
-write.table(wyniki0, "wyniki0.csv", sep=",")
+write.table(wyniki0, "wyniki-max.csv", sep=",")
 
 # Testy zgodności chi-kwadrat i korelacja Pearsona między parametrami metryczkowymi a innymi
 # - przy p < 0.05 oraz r >= 0.2 lub r <= -0.2
@@ -70,4 +70,4 @@ for (i in 1:51){
   }
 }
 wyniki1=na.omit(wyniki1)
-write.table(wyniki1, "wyniki1.csv", sep=",")
+write.table(wyniki1, "wyniki-stat.csv", sep=",")
