@@ -346,7 +346,7 @@ for(i in c(3,68,85,102,119)){
 }
 # Zapis danych liczbowych bez przeskalowania
 liczby <- dane
-write.table(liczby, "liczbowe.csv", sep=",")
+# write.table(liczby, "liczbowe.csv", sep=",")
 
 dane[,2] = normalizuj(dane[,2])
 
@@ -358,4 +358,4 @@ dane[,c(52:58,69:76,86:93,103:110,120:126,135:141,149:156)] = przeskaluj(dane[,c
 dane[,c(12,63:67,80:84,97:101,114:118,130:134,144:148,160:164)] = przeskaluj(dane[,c(12,63:67,80:84,97:101,114:118,130:134,144:148,160:164)], 5, 3)
 
 # Eksport bazy danych po normalizacji i przeskalowaniu do pliku
-write.table(dane, "statystyczne.csv", sep=",")
+write.csv2(dane, "statystyczne.csv", sep=";")

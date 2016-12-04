@@ -1,5 +1,23 @@
 # Wczytanie danych po wstępnej obróbce
 source("preprocessing.R", encoding = "UTF-8")
+nazwy <- read.csv("nazwy.csv", sep=";", encoding = "windows-1250")
+podsumowanie = data.frame(Min = NA,
+                          Max = NA,
+                          n=NA,
+                          Średnia = NA,
+                          SD = NA)
+for(i in 1:dim(liczby)[2]){
+  podsumowanie = rbind(podsumowanie, c(round(min(liczby[,i][!is.na(liczby[,i])]),3),
+                                       round(max(liczby[,i][!is.na(liczby[,i])]),3),
+                                       length(liczby[,i][!is.na(liczby[,i])]),
+                                       round(mean(liczby[,i][!is.na(liczby[,i])]),3),
+                                       round(sd(liczby[,i][!is.na(liczby[,i])]),3)))
+  podsumowanie
+}
+podsumowanie = na.omit(podsumowanie)
+row.names(podsumowanie) <- names(liczby)
+podsumowanie = cbind(nazwy, podsumowanie)
+write.csv2(podsumowanie, "podsumowanie.csv", sep=";")
 
 wyniki.max <- data.frame(Nr_A=NA,
                       Zmienna_A=NA,
@@ -28,19 +46,23 @@ for (i in 1:dim(dane)[2]){
        && (as.numeric(korelacja$estimate) >= 0.5
            || as.numeric(korelacja$estimate) <= -0.5)){
       wyniki.max = rbind(wyniki.max, c(i,
-                               names(dane[i]),
-                               j,
-                               names(dane[j]),
-                               as.numeric(chi.kwadrat$statistic),
-                               as.numeric(chi.kwadrat$parameter),
-                               as.numeric(chi.kwadrat$p.value),
-                               as.numeric(korelacja$estimate)))
+                                       names(dane[i]),
+                                       round(mean(dane[,i]),3),
+                                       round(sd(dane[,i]),3),
+                                       j,
+                                       names(dane[j]),
+                                       round(mean(dane[,j]),3),
+                                       round(sd(dane[,j]),3),
+                                       round(as.numeric(chi.kwadrat$statistic),3),
+                                       round(as.numeric(chi.kwadrat$parameter),3),
+                                       round(as.numeric(chi.kwadrat$p.value),3),
+                                       round(as.numeric(korelacja$estimate),3)))
       wyniki.max
     }
   }
 }
 wyniki.max=na.omit(wyniki.max)
-write.table(wyniki.max, "wyniki-max.csv", sep=",")
+write.csv2(wyniki.max, "wyniki-max.csv", sep=";")
 
 # Testy zgodności chi-kwadrat i korelacja Pearsona między parametrami metryczkowymi a innymi
 # - przy p < 0.05 oraz r >= 0.2 lub r <= -0.2
@@ -70,4 +92,4 @@ for (i in 1:51){
   }
 }
 wyniki.stat=na.omit(wyniki.stat)
-write.table(wyniki.stat, "wyniki-stat.csv", sep=",")
+write.csv2(wyniki.stat, "wyniki-stat.csv", sep=";")
