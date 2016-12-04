@@ -1,4 +1,4 @@
-"Nr_A","Zmienna_A","Srednia_A","SD_A","Nr_B","Zmienna_B","Srednia_B","SD_B","X","df","p","r"
+"Nr_A","Zmienna_A","Srednia_A","SD_A","Nr_B","Zmienna_B","Œrednia_B","SD_B","X","df","p","r"
 "2","2","metryczka.wiek","4","metryczka.wyksztalcenie","350.475568663278","36","3.3870949701034e-53","0.78479516332876","2","metryczka.wiek","4","metryczka.wyksztalcenie"
 "3","5","metryczka.nauka","6","metryczka.praca","77.2187090889667","2","1.70675180761846e-17","-0.577496985994199","5","metryczka.nauka","6","metryczka.praca"
 "4","9","metryczka.zakupy","10","metryczka.przygotowanie","80.2209162403835","4","1.5638737436937e-16","0.503910157754045","9","metryczka.zakupy","10","metryczka.przygotowanie"

@@ -87,7 +87,7 @@ produkty = cbind(produkty, as.vector(apply(dane[,108:116], 1, mean, na.rm = T)))
 produkty = cbind(produkty, as.vector(apply(dane[,133:138], 1, mean, na.rm = T)))
 produkty = cbind(produkty, as.vector(apply(dane[,155:158], 1, mean, na.rm = T)))
 
-# Scalanie przeliczonych danych w jedną bazę z nadaniem nazw kolumn
+# Scalanie przeliczonych danych w jedną bazę
 dane = data.frame(dane[,1:5],
                  zatrudnienie,
                  dane[,11:12],
@@ -119,6 +119,12 @@ dane = data.frame(dane[,1:5],
                  spozycie[,7],
                  opakowanie[,2],
                  dane[,c(224:228)])
+pytania <- names(dane)
+
+#Eksport treści pytań do pliku Excel
+#write.table(names(dane), "nazwy.csv", sep=";", fileEncoding = "windows-1250")
+
+#Nadanie nazw kolumnom
 names(dane) = c("metryczka.plec",
                 "metryczka.wiek",
                 "metryczka.miejsce",
@@ -139,7 +145,7 @@ names(dane) = c("metryczka.plec",
                 "fcq.dieta_tluszcz",
                 "fcq.pol_pochodzenie",
                 "fcq.eko_bezgmo",
-                "fcq.dieta_wit-i-min",
+                "fcq.dieta_wit.i.min",
                 "fcq.dieta_bezdodatkow",
                 "fcq.dieta_odzywcza",
                 "fcq.dieta_bialko",
@@ -193,7 +199,7 @@ names(dane) = c("metryczka.plec",
                 "pomidor.rodzaj",
                 "pomidor.kraj",
                 "pomidor.barwa",
-                "pomidor.slodkosc",
+                "pomidor.kwasnosc",
                 "pomidor.miekkosc",
                 "pomidor.spozycie",
                 "pomidor.okres",
@@ -211,7 +217,7 @@ names(dane) = c("metryczka.plec",
                 "jablko.kraj",
                 "jablko.barwa",
                 "jablko.miekkosc",
-                "jablko.slodkosc",
+                "jablko.kwasnosc",
                 "jablko.spozycie",
                 "jablko.okres",
                 "jablko.sklep",
@@ -228,7 +234,7 @@ names(dane) = c("metryczka.plec",
                 "pomarancza.kraj",
                 "pomarancza.barwa",
                 "pomarancza.miekkosc",
-                "pomarancza.slodkosc",
+                "pomarancza.kwasnosc",
                 "pomarancza.spozycie",
                 "pomarancza.okres",
                 "pomarancza.sklep",
@@ -322,11 +328,8 @@ for(i in 149:157){
   dane[,i][dane[,158] == 0] <- NA
   dane[,i]
 }
-# Eksport bazy danych przed normalizacją
-write.table(dane, "liczbowe.csv", sep=",")
 
 # Normalizacja danych liczbowych
-# i przeskalowanie danych liczbowych na potrzeby analizy statystycznej wg warunków określonych w przeskaluj.R
 for(i in c(59,77,94,111,127,143,158)){
     dane[,i] = normalizuj(dane[,i])
     dane[,i][dane[,i] > 0 & dane[,i] <= 0.05] <- 0.05
@@ -337,10 +340,17 @@ for(i in c(62,159)){
   dane[,i][!is.na(dane[,i])] = normalizuj(dane[,i][!is.na(dane[,i])])
   dane[,i]
 }
-for(i in c(2,3,68,85,102,119)){
+for(i in c(3,68,85,102,119)){
   dane[,i] = normalizuj(dane[,i])
   dane[,i]
 }
+# Zapis danych liczbowych bez przeskalowania
+liczby <- dane
+write.table(liczby, "liczbowe.csv", sep=",")
+
+dane[,2] = normalizuj(dane[,2])
+
+# Przeskalowanie danych liczbowych na potrzeby analizy statystycznej wg warunków określonych w przeskaluj.R
 dane[,7] = przeskaluj(dane[,7], 10, 5)
 dane[,8] = przeskaluj(dane[,8], 10, 4)
 dane[,14:51] = przeskaluj(dane[,14:51], 7, 3)
