@@ -9,6 +9,7 @@
 
 library(shiny)
 library(DT)
+source("statystyki.R", encoding = "UTF-8")
 # Define UI for application that draws a histogram
 ui <- navbarPage("PlantFoods",
              tabPanel("Histogramy",
@@ -68,7 +69,6 @@ server <- function(input, output, session) {
    output$podsumowanie <- renderTable({
      x       <- liczby[,input$parametr][!is.na(liczby[,input$parametr])]
      kolumny <- seq(min(x), max(x), length.out = input$kolumny + 1)
-     h       <- hist(x, breaks = kolumny)
      podsumowanie[input$parametr,]
    })
    output$opis <- renderPrint({
