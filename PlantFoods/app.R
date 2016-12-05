@@ -8,34 +8,46 @@
 #
 
 library(shiny)
-
+library(DT)
 # Define UI for application that draws a histogram
-ui <- fluidPage(
-   
-   # Application title
-   titlePanel("Histogramy"),
-   
-   # Sidebar with a slider input for number of bins 
-   sidebarLayout(
-      sidebarPanel(
-         selectInput("parametr", "Dane:", 
-                    choices=colnames(liczby)),
-         hr(),
-         uiOutput("pasek"),
-         hr(),
-         helpText("Kacper Pietraszewski, 2016")
-      ),
-      
-      # Show a plot of the generated distribution
-      mainPanel(
-         plotOutput("histogram"),
-         verbatimTextOutput("opis"),
-         hr(),
-         h3("Podsumowanie"),
-         tableOutput("podsumowanie"))
-   )
+ui <- navbarPage("PlantFoods",
+             tabPanel("Histogramy",
+                      titlePanel("Histogramy"),
+                      sidebarLayout(
+                        sidebarPanel(
+                          selectInput("parametr", "Dane:",
+                                      choices=colnames(liczby)),
+                                      hr(),
+                                      uiOutput("pasek"),
+                                      hr(),
+                                      helpText("Kacper Pietraszewski, 2016")),
+                        mainPanel(
+                          plotOutput("histogram"),
+                          verbatimTextOutput("opis"),
+                          hr(),
+                          h3("Podsumowanie"),
+                          tableOutput("podsumowanie"))
+                        )
+                      ),
+             tabPanel("Zestawienie",
+                      titlePanel("Zestawienie"),
+                      DT::dataTableOutput("zestawienie")
+                      ), 
+             tabPanel("Statystyki",
+                       titlePanel("Statystyki"),
+                       sidebarLayout(
+                         sidebarPanel(
+                           numericInput("p", "Poziom istotności (p)", value = 0.05, step = 0.01, min = 0, max=0.1),
+                           numericInput("r", "Zakres korelacji (r)", value = 0.5, step = 0.05, min = 0, max=1),
+                           hr(),
+                           helpText("Kacper Pietraszewski, 2016")
+                         ),
+                         mainPanel(
+                           DT::dataTableOutput("statystyki")
+                           )
+                         )
+                       )
 )
-
 # Define server logic required to draw a histogram
 server <- function(input, output, session) {
 
@@ -46,7 +58,7 @@ server <- function(input, output, session) {
    })
    output$pasek <- renderUI({
      x       <- liczby[,input$parametr][!is.na(liczby[,input$parametr])]
-     y       <- dane[,input$parametr][!is.na(dane[,input$parametr])]
+     y       <- dane[,input$parametr][!is.na(dane[,input$kolumny])]
      sliderInput("kolumny", "Liczba przedziałów:",
                  min=1,
                  max=length(unique(x)),
@@ -69,9 +81,30 @@ server <- function(input, output, session) {
      row.names(opis) <- c("Odpowiedzi", "Udział proc.", "Stos. do max.")
      print(opis)
    })
-
+   output$statystyki <- DT::renderDataTable({
+     wyniki <- c()
+     for (i in 1:dim(wyniki.total)[2]){
+       wyniki = cbind(wyniki,
+                      wyniki.total[,i][as.numeric(wyniki.total$p) < input$p & (as.numeric(wyniki.total$r) > input$r | as.numeric(wyniki.total$r) < -input$r)])
+       wyniki
+     }
+     wyniki = as.data.frame(wyniki)
+     names(wyniki) = names(wyniki.total)
+     DT::datatable(
+       wyniki[,c(2,6,9:12)], options = list(
+         lengthMenu = list(c(5, 10, 15, 20, 30, 50, 75, 100, -1), c('5', '10', '15', '20', '30', '50', '75', '100', 'Wszystkie')),
+         pageLength = 20
+         )
+       )
+   })
+   output$zestawienie <- DT::renderDataTable({
+     DT::datatable(
+       podsumowanie, rownames = F, options = list(
+         lengthMenu = list(c(5, 10, 15, 20, 30, 50, 75, 100, -1), c('5', '10', '15', '20', '30', '50', '75', '100', 'Wszystkie')),
+         pageLength = 20
+         )
+     )
+   })
 }
-
 # Run the application 
 shinyApp(ui = ui, server = server)
-

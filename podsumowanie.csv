@@ -1,165 +1,165 @@
-"";"Pytanie";"Minimum";"Maksimum";"Min";"Max";"n";"Œrednia";"SD"
-"metryczka.plec";"P³eæ";"Mê¿czyzna";"Kobieta";0;1;195;0,646;0,479
-"metryczka.wiek";"Wiek";"18";"30";18;30;195;23,169;2,459
-"metryczka.miejsce";"Miejsce zamieszkania";"Wieœ";"Miasto pow. 500 tys. Mieszkañców";0;1;195;0,694;0,446
-"metryczka.wyksztalcenie";"Wykszta³cenie";"Ukoñczona szko³a podstawowa";"Ukoñczone studia magisterskie";0,25;1;195;0,694;0,2
-"metryczka.nauka";"Uczê siê/studiujê";"Nie uczê siê/nie studiujê";"Uczê siê/studiujê";0;1;195;0,759;0,429
-"metryczka.praca";"Wymiar czasu pracy";"Nie pracujê/Emeryt-rencista";"Pracujê na ca³ym etacie";0;1;195;0,356;0,369
-"metryczka.osoby";"Liczba osób w gospodarstwie domowym";"1";"15";1;9;195;3,354;1,551
-"metryczka.dzieci";"Liczba dzieci w gospodarstwie domowym";"0";"10";0;6;195;0,785;1,246
-"metryczka.zakupy";"Zakupy";"Nie dokonujê";"Samodzielnie przygotowujê";0;1;195;0,795;0,281
-"metryczka.przygotowanie";"Posi³ki";"Nie przygotowujê";"Samodzielnie przygotowujê";0;1;195;0,754;0,306
-"metryczka.sytuacja";"Jak ocenia Pan Pani sytuacjê finansow¹ swojego gospodarstwa domowego ";"Pieniêdzy nie wystarcza";"Wystarcza na wszystko";0;1;191;0,937;0,181
-"metryczka.wiedza";"Jak ocenia Pan Pani swoj¹ wiedzê ¿ywieniow¹";"Bardzo niska";"Bardzo wysoka";1;5;195;3,595;0,834
-"metryczka.dieta";"Dieta";"Nie";"Tak";0;1;195;0,19;0,393
-"fcq.dieta_kalorie";"Wa¿ne, by ¿ywnoœæ zawiera³a ma³o kalorii";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;3,267;1,527
-"fcq.cena_wartosc";"Wa¿ne, by ¿ywnoœæ by³a warta pieniêdzy, które za ni¹ p³acê";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;5,949;1,192
-"fcq.eko_opakowana";"Wa¿ne, by ¿ywnoœæ by³a opakowana w sposób przyjazny dla œrodowiska";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,964;1,364
-"fcq.eko_produkowana";"Wa¿ne, by ¿ywnoœæ pochodzi³a z produkcji ekologicznej";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,282;1,47
-"fcq.dieta_tluszcz";"Wa¿ne, by ¿ywnoœæ zawiera³a ma³o t³uszczu";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;3,862;1,417
-"fcq.pol_pochodzenie";"Wa¿ne, by ¿ywnoœæ by³a polskiego pochodzenia";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,697;1,538
-"fcq.eko_bezgmo";"Wa¿ne, by ¿ywnoœæ nie zawiera³a genetycznie modyfikowanych sk³adników";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,769;1,919
-"fcq.dieta_wit.i.min";"Wa¿ne, by ¿ywnoœæ zawiera³a du¿o witamin i sk³adników mineralnych";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";2;7;195;5,99;1,025
-"fcq.dieta_bezdodatkow";"Wa¿ne, by ¿ywnoœæ nie zawiera³a sztucznych dodatków";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;5,662;1,365
-"fcq.dieta_odzywcza";"Wa¿ne, by ¿ywnoœæ charakteryzowa³a siê odpowiedni¹ wartoœci¹ od¿ywcz¹";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";3;7;195;6;1,04
-"fcq.dieta_bialko";"Wa¿ne, by ¿ywnoœæ zawiera³a du¿o bia³ka";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,636;1,204
-"fcq.dieta_naturalna";"Wa¿ne, by ¿ywnoœæ zawiera³a naturalne sk³adniki";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;5,964;1,027
-"fcq.hed_zdziecinstwa";"Wa¿ne, by ¿ywnoœæ przypomina³a tê, któr¹ jad³em am, w dzieciñstwie";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;3,779;1,579
-"fcq.hed_odprezajaca";"Wa¿ne, by ¿ywnoœæ pomaga³a odprê¿yæ siê";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,374;1,605
-"fcq.hed_wygodna";"Wa¿ne, by ¿ywnoœæ by³a ma³o czasoch³onna";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,379;1,602
-"frl.nowe_zawartosc";"Informacja na opakowaniu produktu jest dla mnie bardzo wa¿na,  muszê wiedzieæ, co ten produkt zawiera";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;5,662;1,526
-"frl.dieta_odzywcza";"Porównujê etykiety, ¿eby wybraæ produkty o najwy¿szej wartoœci od¿ywczej";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,754;2,041
-"frl.cena_info";"Zawsze sprawdzam ceny nawet najdrobniejszych produktów";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,672;1,893
-"frl.nowe_etykiety";"Porównujê informacje na etykietach produktów zanim zdecydujê, który produkt wybraæ";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;5,103;1,779
-"frl.dieta_naturalna";"Wolê kupowaæ produkty naturalne, np, bez konserwantów";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;5,518;1,367
-"frl.dieta_bezdodatkow";"Staram siê unikaæ ¿ywnoœci zawieraj¹cej substancje dodatkowe";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;5,062;1,445
-"frl.dieta_wartosc";"Wa¿niejsze jest wybieranie ¿ywnoœci ze wzglêdu na wartoœæ od¿ywcz¹ ni¿ jej smak";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;3,928;1,525
-"fns.nowe_ufnosc";"Nie ufam nowym produktom ¿ywnoœciowym";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;3,262;1,392
-"fns.nowe_przyjecia";"Na przyjêciach próbujê nowych potraw i produktów";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;5,636;1,409
-"cet.pol_bezrobocie";"Kupowanie zagranicznych produktów pozbawia Polaków miejsc pracy";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;3,631;1,624
-"cet.pol_niedostepne";"Z zagranicy nale¿y sprowadzaæ jedynie te produkty, które nie s¹ dostêpne w Polsce";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,308;1,778
-"cet.pol_nieprodukowane";"Z zagranicy nale¿y sprowadzaæ jedynie te produkty, których nie mo¿na wyprodukowaæ w Polsce";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,287;1,867
-"mgr.nowe_marki";"Mam szczególne zaufanie do niektórych marek, producentów i dostawców";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;5,205;1,339
-"mgr.hed_przepis";"Korzystam z podanego na opakowaniu sposobu przygotowania lub przepisu";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;3,99;1,793
-"mgr.hed_przyjemnosc";"Wa¿ne, by ¿ywnoœæ sprawia³a przyjemnoœæ";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;5,667;1,291
-"mgr.hed_niesmaczna";"Jeœli produkt mi nie smakowa³, nie kupiê go nigdy wiêcej";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;5,523;1,603
-"mgr.pol_swieza";"Polska ¿ywnoœæ jest œwie¿sza ni¿ zagraniczna";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,313;1,446
-"mgr.pol_tania";"Polska ¿ywnoœæ jest tañsza ni¿ zagraniczna";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,087;1,279
-"mgr.pol_smaczna";"Polska ¿ywnoœæ jest smaczniejsza ni¿ zagraniczna";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,39;1,397
-"mgr.nowe_sklad";"Nie kupujê produktów, których sk³adników nie znam";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;3,944;1,603
-"mgr.hed_wrazenie";"Lubiê kupowaæ takie produkty ¿ywnoœciowe, które zrobi¹ na innych wra¿enie";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;3,292;1,693
-"mgr.hed_zakupy";"Kupowanie ró¿nych produktów ¿ywnoœciowych wywo³uje we mnie pozytywne uczucia i emocje";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,913;1,579
-"mgr.hed_szybko";"Staram siê, by zrobiæ zakupy tak szybko i skutecznie, jak to mo¿liwe";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;5,046;1,462
-"ziemniak.cena";"W jakim stopniu cena jest wa¿na dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;172;4,773;2,497
-"ziemniak.miejsce";"W jakim stopniu miejsce zakupu jest wa¿ne dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;172;5,337;2,702
-"ziemniak.swiezosc";"W jakim stopniu œwie¿oœæ jest wa¿na dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";3;10;172;8,605;1,524
-"ziemniak.rodzaj";"W jakim stopniu odmiana ziemniaków jest wa¿na dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;172;4,884;2,991
-"ziemniak.kraj";"W jakim stopniu kraj pochodzenia jest wa¿ny dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;172;5,715;2,959
-"ziemniak.barwa";"W jakim stopniu kolor skórki jest wa¿ny dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;172;5,297;2,699
-"ziemniak.wyglad";"W jakim stopniu brak oczek i kie³ków jest wa¿ny dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;172;6,436;2,76
-"ziemniak.spozycie";"Spo¿ycie ziemniaków";"Nigdy";"2-3 razy dziennie";0;1;195;0,125;0,133
-"ziemniak.okres";"Sezonowoœæ/promocja przy zakupie";"Niezale¿nie od ceny i sezonu";"Zale¿nie od ceny i sezonu";0;1;195;0,051;0,221
-"ziemniak.sklep";"Miejsce zakupu";"Z ogródka/bezpoœrednio od rolnika";"Hipermarket/supermarket";0;1;172;0,458;0,307
-"ziemniak.opakowanie";"Wygoda opakowania";"Z ziemi luzem";"Myte w worku";0;1;172;0,415;0,316
-"ziemniak.obrobka";"Czy Pana Pani zdaniem ziemniaki s¹ trudne w obróbce ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;1,964;1,105
-"ziemniak.potrawy";"Czy Pana Pani zdaniem ziemniaki nadaj¹ siê do przygotowania wielu potraw ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;4,41;0,81
-"ziemniak.zdrowotnosc";"Czy Pana Pani zdaniem ziemniaki maj¹ korzystny wp³yw na zdrowie ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;3,651;0,856
-"ziemniak.smak";"Czy Pana Pani zdaniem ziemniaki dostêpne na polskim rynku s¹ smaczne ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;4,256;0,736
-"ziemniak.jakosc";"Czy Pana Pani zdaniem ziemniaki dostêpne na polskim rynku maj¹ dobr¹ jakoœæ ";"Zdecydowanie nie";"Zdecydowanie tak";2;5;195;4,256;0,597
-"ziemniak.produkty";"Ró¿norodnoœæ preferowanych produktów";"Ma³a";"Du¿a";0;1;195;0,424;0,307
-"pomidor.cena";"W jakim stopniu cena jest wa¿na dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;182;6,418;2,165
-"pomidor.miejsce";"W jakim stopniu miejsce zakupu jest wa¿ne dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;182;5,83;2,615
-"pomidor.swiezosc";"W jakim stopniu œwie¿oœæ jest wa¿na dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";6;10;182;9,11;1,137
-"pomidor.rodzaj";"W jakim stopniu odmiana pomidorów jest wa¿na dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;182;6,604;2,483
-"pomidor.kraj";"W jakim stopniu kraj pochodzenia jest wa¿ny dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;182;5,643;2,902
-"pomidor.barwa";"W jakim stopniu kolor skórki jest wa¿ny dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;182;7,725;2,092
-"pomidor.kwasnosc";"Jakie pomidory Pan Pani wybiera ze wzglêdu na smak ";"S³odkie";"Kwaœne";1;7;182;3,137;1,247
-"pomidor.miekkosc";"W jakim stopniu miêkkoœæ pomidorów jest wa¿na dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;182;7,11;2,038
-"pomidor.spozycie";"Spo¿ycie pomidorów";"Nigdy";"2-3 razy dziennie";0;1;195;0,109;0,13
-"pomidor.okres";"Sezonowoœæ/promocja przy zakupie";"Niezale¿nie od ceny i sezonu";"Zale¿nie od ceny i sezonu";0;1;195;0,292;0,456
-"pomidor.sklep";"Miejsce zakupu";"Z ogródka/bezpoœrednio od rolnika";"Hipermarket/supermarket";0;1;182;0,543;0,304
-"pomidor.obrobka";"Czy Pana Pani zdaniem pomidory s¹ trudne w obróbce ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;1,718;0,895
-"pomidor.potrawy";"Czy Pana Pani zdaniem pomidory nadaj¹ siê do przygotowania wielu potraw ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;4,487;0,802
-"pomidor.zdrowotnosc";"Czy Pana Pani zdaniem pomidory maj¹ korzystny wp³yw na zdrowie ";"Zdecydowanie nie";"Zdecydowanie tak";3;5;195;4,574;0,616
-"pomidor.smak";"Czy Pana Pani zdaniem pomidory dostêpne na polskim rynku s¹ smaczne ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;4,344;0,753
-"pomidor.jakosc";"Czy Pana Pani zdaniem pomidory dostêpne na polskim rynku maj¹ dobr¹ jakoœæ ";"Zdecydowanie nie";"Zdecydowanie tak";2;5;195;4,262;0,779
-"pomidor.produkty";"Ró¿norodnoœæ preferowanych produktów";"Ma³a";"Du¿a";0;1;195;0,506;0,196
-"jablko.cena";"W jakim stopniu cena jest wa¿na dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;187;5,684;2,636
-"jablko.miejsce";"W jakim stopniu miejsce zakupu jest wa¿ne dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;187;5,588;2,562
-"jablko.swiezosc";"W jakim stopniu œwie¿oœæ jest wa¿na dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;187;8,337;1,722
-"jablko.rodzaj";"W jakim stopniu odmiana jab³ek jest wa¿na dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;187;7,444;2,197
-"jablko.kraj";"W jakim stopniu kraj pochodzenia jest wa¿ny dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;187;6,743;2,803
-"jablko.barwa";"W jakim stopniu kolor skórki jest wa¿ny dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;187;7,144;2,388
-"jablko.miekkosc";"W jakim stopniu miêkkoœæ jab³ek jest wa¿na dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;187;7,342;2,367
-"jablko.kwasnosc";"Jakie jab³ka Pan Pani wybiera ze wzglêdu na smak ";"S³odkie";"Kwaœne";1;7;187;3,759;1,763
-"jablko.spozycie";"Spo¿ycie jab³ek";"Nigdy";"2-3 razy dziennie";0;1;195;0,139;0,157
-"jablko.okres";"Sezonowoœæ/promocja przy zakupie";"Niezale¿nie od ceny i sezonu";"Zale¿nie od ceny i sezonu";0;1;195;0,154;0,362
-"jablko.sklep";"Miejsce zakupu";"Z ogródka/bezpoœrednio od rolnika";"Hipermarket/supermarket";0;1;187;0,5;0,311
-"jablko.obrobka";"Czy Pana Pani zdaniem jab³ka s¹ trudne w obróbce ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;1,718;0,895
-"jablko.potrawy";"Czy Pana Pani zdaniem jab³ka nadaj¹ siê do przygotowania wielu potraw ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;3,723;1,212
-"jablko.zdrowotnosc";"Czy Pana Pani zdaniem jab³ka maj¹ korzystny wp³yw na zdrowie ";"Zdecydowanie nie";"Zdecydowanie tak";3;5;195;4,569;0,6
-"jablko.smak";"Czy Pana Pani zdaniem jab³ka dostêpne na polskim rynku s¹ smaczne ";"Zdecydowanie nie";"Zdecydowanie tak";2;5;195;4,6;0,569
-"jablko.jakosc";"Czy Pana Pani zdaniem jab³ka dostêpne na polskim rynku maj¹ dobr¹ jakoœæ ";"Zdecydowanie nie";"Zdecydowanie tak";3;5;195;4,6;0,531
-"jablko.produkty";"Ró¿norodnoœæ preferowanych produktów";"Ma³a";"Du¿a";0;1;195;0,431;0,268
-"pomarancza.cena";"W jakim stopniu cena jest wa¿na dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;178;6,798;2,349
-"pomarancza.miejsce";"W jakim stopniu miejsce zakupu jest wa¿ne dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;178;4,809;2,616
-"pomarancza.swiezosc";"W jakim stopniu œwie¿oœæ jest wa¿na dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";1;10;178;8,236;1,674
-"pomarancza.rodzaj";"W jakim stopniu wielkoœæ pomarañczy jest wa¿ny dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;178;6,135;2,241
-"pomarancza.kraj";"W jakim stopniu kraj pochodzenia jest wa¿ny dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;178;4,697;2,856
-"pomarancza.barwa";"W jakim stopniu kolor skórki jest wa¿ny dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;178;6,461;2,489
-"pomarancza.miekkosc";"W jakim stopniu miêkkoœæ pomarañczy jest wa¿na dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";2;10;178;7,264;1,872
-"pomarancza.kwasnosc";"Jakie pomarañcze Pan Pani wybiera ze wzglêdu na smak ";"S³odkie";"Kwaœne";1;7;178;2,747;1,663
-"pomarancza.spozycie";"Spo¿ycie pomarañczy";"Nigdy";"2-3 razy dziennie";0;1;195;0,123;0,153
-"pomarancza.okres";"Sezonowoœæ/promocja przy zakupie";"Niezale¿nie od ceny i sezonu";"Zale¿nie od ceny i sezonu";0;1;195;0,462;0,5
-"pomarancza.sklep";"Miejsce zakupu";"Z ogródka/bezpoœrednio od rolnika";"Hipermarket/supermarket";0,25;1;178;0,76;0,25
-"pomarancza.obrobka";"Czy Pana Pani zdaniem pomarañcze s¹ trudne w obróbce ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;2,41;1,165
-"pomarancza.potrawy";"Czy Pana Pani zdaniem pomarañcze nadaj¹ siê do przygotowania wielu potraw ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;2,559;1,089
-"pomarancza.zdrowotnosc";"Czy Pana Pani zdaniem pomarañcze maj¹ korzystny wp³yw na zdrowie ";"Zdecydowanie nie";"Zdecydowanie tak";3;5;195;4,354;0,668
-"pomarancza.smak";"Czy Pana Pani zdaniem pomarañcze dostêpne na polskim rynku s¹ smaczne ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;3,851;0,87
-"pomarancza.jakosc";"Czy Pana Pani zdaniem pomarañcze dostêpne na polskim rynku maj¹ dobr¹ jakoœæ ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;3,728;0,845
-"pomarancza.produkty";"Ró¿norodnoœæ preferowanych produktów";"Ma³a";"Du¿a";0;1;195;0,521;0,268
-"makaron.cena";"W jakim stopniu cena jest wa¿na dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;187;6,032;2,563
-"makaron.miejsce";"W jakim stopniu miejsce zakupu jest wa¿ne dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;187;3,091;2,617
-"makaron.swiezosc";"W jakim stopniu œwie¿oœæ jest wa¿na dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;187;4,738;2,991
-"makaron.rodzaj";"W jakim stopniu kszta³t makaronu jest wa¿ny dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;187;6,861;2,432
-"makaron.kraj";"W jakim stopniu kraj pochodzenia jest wa¿ny dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;187;3,872;3,139
-"makaron.barwa";"W jakim stopniu kolor makaronu jest wa¿ny dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;187;5,535;2,838
-"makaron.marka";"W jakim stopniu marka producenta jest wa¿na dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;187;5,957;2,725
-"makaron.spozycie";"Spo¿ycie makaronu";"Nigdy";"2-3 razy dziennie";0;1;195;0,096;0,101
-"makaron.okres";"Sezonowoœæ/promocja przy zakupie";"Niezale¿nie od ceny i sezonu";"Zale¿nie od ceny i sezonu";0;1;195;0,021;0,142
-"makaron.sklep";"Miejsce zakupu";"Robiê samodzielnie";"Hipermarket/supermarket";0;1;187;0,813;0,205
-"makaron.obrobka";"Czy Pana Pani zdaniem makaron jest trudny do samodzielnego przygotowania ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;1,559;0,958
-"makaron.potrawy";"Czy Pana Pani zdaniem makarony nadaj¹ siê do przygotowania wielu potraw ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;4,631;0,671
-"makaron.zdrowotnosc";"Czy Pana Pani zdaniem makarony maj¹ korzystny wp³yw na zdrowie ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;3,041;0,907
-"makaron.smak";"Czy Pana Pani zdaniem makarony dostêpne na polskim rynku s¹ smaczne ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;4,164;0,728
-"makaron.jakosc";"Czy Pana Pani zdaniem makarony dostêpne na polskim rynku maj¹ dobr¹ jakoœæ ";"Zdecydowanie nie";"Zdecydowanie tak";2;5;195;4,118;0,754
-"platki.cena";"W jakim stopniu cena jest wa¿na dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;171;6,579;2,415
-"platki.miejsce";"W jakim stopniu miejsce zakupu jest wa¿ne dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;171;2,901;2,506
-"platki.swiezosc";"W jakim stopniu œwie¿oœæ jest wa¿na dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;171;4,982;3,071
-"platki.rodzaj";"W jakim stopniu smak jest wa¿ny dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;171;8,17;1,956
-"platki.kraj";"W jakim stopniu kraj pochodzenia jest wa¿ny dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;171;3,135;2,857
-"platki.blonnik";"W jakim stopniu zawartoœæ b³onnika jest wa¿ny dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;171;5,228;3,091
-"platki.marka";"W jakim stopniu marka producenta jest wa¿na dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;171;5,947;2,779
-"platki.sklep";"W jakim miejscu Pan Pani kupuje je najczêœciej";"Robiê samodzielnie";"Hipermarket/supermarket";0;1;171;0,813;0,219
-"platki.spozycie";"Spo¿ycie p³atków";"Nigdy";"2-3 razy dziennie";0;1;195;0,209;0,235
-"platki.obrobka";"Czy Pana Pani zdaniem p³atki s¹ trudne do samodzielnego przygotowania ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;1,41;0,945
-"platki.potrawy";"Czy Pana Pani zdaniem p³atki nadaj¹ siê do przygotowania wielu potraw ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;2,349;1,202
-"platki.zdrowotnosc";"Czy Pana Pani zdaniem p³atki maj¹ korzystny wp³yw na zdrowie ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;3,503;1,137
-"platki.smak";"Czy Pana Pani zdaniem p³atki dostêpne na polskim rynku s¹ smaczne ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;4,108;0,864
-"platki.jakosc";"Czy Pana Pani zdaniem p³atki dostêpne na polskim rynku maj¹ dobr¹ jakoœæ ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;4,031;0,824
-"pieczywo.cena";"W jakim stopniu cena jest wa¿na dla Pana Pani przy jego wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;191;5,707;2,623
-"pieczywo.miejsce";"W jakim stopniu miejsce zakupu jest wa¿ne dla Pana Pani przy jego wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;191;6,984;2,547
-"pieczywo.swiezosc";"W jakim stopniu œwie¿oœæ jest wa¿na dla Pana Pani przy jego wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;191;9,424;1,207
-"pieczywo.rodzaj";"W jakim stopniu rodzaj pieczywa jest wa¿ny dla Pana Pani przy jego wyborze ";"Wcale";"W najwy¿szym stopniu";4;10;191;8,901;1,25
-"pieczywo.kraj";"W jakim stopniu kraj pochodzenia jest wa¿ny dla Pana Pani przy jego wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;191;6,602;3,464
-"pieczywo.barwa";"W jakim stopniu kolor pieczywa jest wa¿ny dla Pana Pani przy jego wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;191;8,12;1,939
-"pieczywo.ziarna";"W jakim stopniu zawartoœæ ziaren jest wa¿na dla Pana Pani przy jego wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;191;7,476;2,565
-"pieczywo.blonnik";"W jakim stopniu zawartoœæ b³onnika jest wa¿na dla Pana Pani przy jego wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;191;5,827;3,173
-"pieczywo.sklep";"Miejsce zakupu";"Robiê samodzielnie";"Hipermarket/supermarket";0;1;191;0,469;0,253
-"pieczywo.spozycie";"Spo¿ycie pieczywa";"Nigdy";"2-3 razy dziennie";0;1;195;0,187;0,17
-"pieczywo.opakowanie";"Wygoda opakowania";"W ca³oœci bez opakowania";"Krojony w opakowaniu";0;1;187;0,249;0,426
-"pieczywo.obrobka";"Czy Pana Pani zdaniem pieczywo jest trudne w samodzielnym przygotowaniu ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;2,108;1,317
-"pieczywo.potrawy";"Czy Pana Pani zdaniem pieczywo nadaje siê do przygotowania wielu potraw ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;2,949;1,174
-"pieczywo.zdrowotnosc";"Czy Pana Pani zdaniem pieczywo ma korzystny wp³yw na zdrowie ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;3,369;0,962
-"pieczywo.smak";"Czy Pana Pani zdaniem pieczywo dostêpne na polskim rynku jest smaczne ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;4,379;0,806
-"pieczywo.jakosc";"Czy Pana Pani zdaniem pieczywo dostêpne na polskim rynku ma dobr¹ jakoœæ ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;4,338;0,759
+"";"Lp";"kod";"Pytanie";"Minimum";"Maksimum";"Min";"Max";"n";"Œrednia";"SD"
+"metryczka.plec";1;"metryczka.plec";"P³eæ";"Mê¿czyzna";"Kobieta";0;1;195;0,646;0,479
+"metryczka.wiek";2;"metryczka.wiek";"Wiek";"18";"30";18;30;195;23,169;2,459
+"metryczka.miejsce";3;"metryczka.miejsce";"Miejsce zamieszkania";"Wieœ";"Miasto pow. 500 tys. Mieszkañców";0;1;195;0,694;0,446
+"metryczka.wyksztalcenie";4;"metryczka.wyksztalcenie";"Wykszta³cenie";"Ukoñczona szko³a podstawowa";"Ukoñczone studia magisterskie";0,25;1;195;0,694;0,2
+"metryczka.nauka";5;"metryczka.nauka";"Uczê siê/studiujê";"Nie uczê siê/nie studiujê";"Uczê siê/studiujê";0;1;195;0,759;0,429
+"metryczka.praca";6;"metryczka.praca";"Wymiar czasu pracy";"Nie pracujê/Emeryt-rencista";"Pracujê na ca³ym etacie";0;1;195;0,356;0,369
+"metryczka.osoby";7;"metryczka.osoby";"Liczba osób w gospodarstwie domowym";"1";"15";1;9;195;3,354;1,551
+"metryczka.dzieci";8;"metryczka.dzieci";"Liczba dzieci w gospodarstwie domowym";"0";"10";0;6;195;0,785;1,246
+"metryczka.zakupy";9;"metryczka.zakupy";"Zakupy";"Nie dokonujê";"Samodzielnie przygotowujê";0;1;195;0,795;0,281
+"metryczka.przygotowanie";10;"metryczka.przygotowanie";"Posi³ki";"Nie przygotowujê";"Samodzielnie przygotowujê";0;1;195;0,754;0,306
+"metryczka.sytuacja";11;"metryczka.sytuacja";"Jak ocenia Pan Pani sytuacjê finansow¹ swojego gospodarstwa domowego ";"Pieniêdzy nie wystarcza";"Wystarcza na wszystko";0;1;191;0,937;0,181
+"metryczka.wiedza";12;"metryczka.wiedza";"Jak ocenia Pan Pani swoj¹ wiedzê ¿ywieniow¹";"Bardzo niska";"Bardzo wysoka";1;5;195;3,595;0,834
+"metryczka.dieta";13;"metryczka.dieta";"Dieta";"Nie";"Tak";0;1;195;0,19;0,393
+"fcq.dieta_kalorie";14;"fcq.dieta_kalorie";"Wa¿ne, by ¿ywnoœæ zawiera³a ma³o kalorii";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;3,267;1,527
+"fcq.cena_wartosc";15;"fcq.cena_wartosc";"Wa¿ne, by ¿ywnoœæ by³a warta pieniêdzy, które za ni¹ p³acê";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;5,949;1,192
+"fcq.eko_opakowana";16;"fcq.eko_opakowana";"Wa¿ne, by ¿ywnoœæ by³a opakowana w sposób przyjazny dla œrodowiska";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,964;1,364
+"fcq.eko_produkowana";17;"fcq.eko_produkowana";"Wa¿ne, by ¿ywnoœæ pochodzi³a z produkcji ekologicznej";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,282;1,47
+"fcq.dieta_tluszcz";18;"fcq.dieta_tluszcz";"Wa¿ne, by ¿ywnoœæ zawiera³a ma³o t³uszczu";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;3,862;1,417
+"fcq.pol_pochodzenie";19;"fcq.pol_pochodzenie";"Wa¿ne, by ¿ywnoœæ by³a polskiego pochodzenia";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,697;1,538
+"fcq.eko_bezgmo";20;"fcq.eko_bezgmo";"Wa¿ne, by ¿ywnoœæ nie zawiera³a genetycznie modyfikowanych sk³adników";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,769;1,919
+"fcq.dieta_wit.i.min";21;"fcq.dieta_wit.i.min";"Wa¿ne, by ¿ywnoœæ zawiera³a du¿o witamin i sk³adników mineralnych";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";2;7;195;5,99;1,025
+"fcq.dieta_bezdodatkow";22;"fcq.dieta_bezdodatkow";"Wa¿ne, by ¿ywnoœæ nie zawiera³a sztucznych dodatków";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;5,662;1,365
+"fcq.dieta_odzywcza";23;"fcq.dieta_odzywcza";"Wa¿ne, by ¿ywnoœæ charakteryzowa³a siê odpowiedni¹ wartoœci¹ od¿ywcz¹";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";3;7;195;6;1,04
+"fcq.dieta_bialko";24;"fcq.dieta_bialko";"Wa¿ne, by ¿ywnoœæ zawiera³a du¿o bia³ka";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,636;1,204
+"fcq.dieta_naturalna";25;"fcq.dieta_naturalna";"Wa¿ne, by ¿ywnoœæ zawiera³a naturalne sk³adniki";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;5,964;1,027
+"fcq.hed_zdziecinstwa";26;"fcq.hed_zdziecinstwa";"Wa¿ne, by ¿ywnoœæ przypomina³a tê, któr¹ jad³em am, w dzieciñstwie";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;3,779;1,579
+"fcq.hed_odprezajaca";27;"fcq.hed_odprezajaca";"Wa¿ne, by ¿ywnoœæ pomaga³a odprê¿yæ siê";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,374;1,605
+"fcq.hed_wygodna";28;"fcq.hed_wygodna";"Wa¿ne, by ¿ywnoœæ by³a ma³o czasoch³onna";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,379;1,602
+"frl.nowe_zawartosc";29;"frl.nowe_zawartosc";"Informacja na opakowaniu produktu jest dla mnie bardzo wa¿na,  muszê wiedzieæ, co ten produkt zawiera";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;5,662;1,526
+"frl.dieta_odzywcza";30;"frl.dieta_odzywcza";"Porównujê etykiety, ¿eby wybraæ produkty o najwy¿szej wartoœci od¿ywczej";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,754;2,041
+"frl.cena_info";31;"frl.cena_info";"Zawsze sprawdzam ceny nawet najdrobniejszych produktów";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,672;1,893
+"frl.nowe_etykiety";32;"frl.nowe_etykiety";"Porównujê informacje na etykietach produktów zanim zdecydujê, który produkt wybraæ";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;5,103;1,779
+"frl.dieta_naturalna";33;"frl.dieta_naturalna";"Wolê kupowaæ produkty naturalne, np, bez konserwantów";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;5,518;1,367
+"frl.dieta_bezdodatkow";34;"frl.dieta_bezdodatkow";"Staram siê unikaæ ¿ywnoœci zawieraj¹cej substancje dodatkowe";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;5,062;1,445
+"frl.dieta_wartosc";35;"frl.dieta_wartosc";"Wa¿niejsze jest wybieranie ¿ywnoœci ze wzglêdu na wartoœæ od¿ywcz¹ ni¿ jej smak";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;3,928;1,525
+"fns.nowe_ufnosc";36;"fns.nowe_ufnosc";"Nie ufam nowym produktom ¿ywnoœciowym";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;3,262;1,392
+"fns.nowe_przyjecia";37;"fns.nowe_przyjecia";"Na przyjêciach próbujê nowych potraw i produktów";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;5,636;1,409
+"cet.pol_bezrobocie";38;"cet.pol_bezrobocie";"Kupowanie zagranicznych produktów pozbawia Polaków miejsc pracy";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;3,631;1,624
+"cet.pol_niedostepne";39;"cet.pol_niedostepne";"Z zagranicy nale¿y sprowadzaæ jedynie te produkty, które nie s¹ dostêpne w Polsce";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,308;1,778
+"cet.pol_nieprodukowane";40;"cet.pol_nieprodukowane";"Z zagranicy nale¿y sprowadzaæ jedynie te produkty, których nie mo¿na wyprodukowaæ w Polsce";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,287;1,867
+"mgr.nowe_marki";41;"mgr.nowe_marki";"Mam szczególne zaufanie do niektórych marek, producentów i dostawców";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;5,205;1,339
+"mgr.hed_przepis";42;"mgr.hed_przepis";"Korzystam z podanego na opakowaniu sposobu przygotowania lub przepisu";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;3,99;1,793
+"mgr.hed_przyjemnosc";43;"mgr.hed_przyjemnosc";"Wa¿ne, by ¿ywnoœæ sprawia³a przyjemnoœæ";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;5,667;1,291
+"mgr.hed_niesmaczna";44;"mgr.hed_niesmaczna";"Jeœli produkt mi nie smakowa³, nie kupiê go nigdy wiêcej";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;5,523;1,603
+"mgr.pol_swieza";45;"mgr.pol_swieza";"Polska ¿ywnoœæ jest œwie¿sza ni¿ zagraniczna";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,313;1,446
+"mgr.pol_tania";46;"mgr.pol_tania";"Polska ¿ywnoœæ jest tañsza ni¿ zagraniczna";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,087;1,279
+"mgr.pol_smaczna";47;"mgr.pol_smaczna";"Polska ¿ywnoœæ jest smaczniejsza ni¿ zagraniczna";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,39;1,397
+"mgr.nowe_sklad";48;"mgr.nowe_sklad";"Nie kupujê produktów, których sk³adników nie znam";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;3,944;1,603
+"mgr.hed_wrazenie";49;"mgr.hed_wrazenie";"Lubiê kupowaæ takie produkty ¿ywnoœciowe, które zrobi¹ na innych wra¿enie";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;3,292;1,693
+"mgr.hed_zakupy";50;"mgr.hed_zakupy";"Kupowanie ró¿nych produktów ¿ywnoœciowych wywo³uje we mnie pozytywne uczucia i emocje";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;4,913;1,579
+"mgr.hed_szybko";51;"mgr.hed_szybko";"Staram siê, by zrobiæ zakupy tak szybko i skutecznie, jak to mo¿liwe";"Ca³kowicie siê nie zgadzam";"Ca³kowicie siê zgadzam";1;7;195;5,046;1,462
+"ziemniak.cena";52;"ziemniak.cena";"W jakim stopniu cena jest wa¿na dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;172;4,773;2,497
+"ziemniak.miejsce";53;"ziemniak.miejsce";"W jakim stopniu miejsce zakupu jest wa¿ne dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;172;5,337;2,702
+"ziemniak.swiezosc";54;"ziemniak.swiezosc";"W jakim stopniu œwie¿oœæ jest wa¿na dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";3;10;172;8,605;1,524
+"ziemniak.rodzaj";55;"ziemniak.rodzaj";"W jakim stopniu odmiana ziemniaków jest wa¿na dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;172;4,884;2,991
+"ziemniak.kraj";56;"ziemniak.kraj";"W jakim stopniu kraj pochodzenia jest wa¿ny dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;172;5,715;2,959
+"ziemniak.barwa";57;"ziemniak.barwa";"W jakim stopniu kolor skórki jest wa¿ny dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;172;5,297;2,699
+"ziemniak.wyglad";58;"ziemniak.wyglad";"W jakim stopniu brak oczek i kie³ków jest wa¿ny dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;172;6,436;2,76
+"ziemniak.spozycie";59;"ziemniak.spozycie";"Spo¿ycie ziemniaków";"Nigdy";"2-3 razy dziennie";0;1;195;0,125;0,133
+"ziemniak.okres";60;"ziemniak.okres";"Sezonowoœæ/promocja przy zakupie";"Niezale¿nie od ceny i sezonu";"Zale¿nie od ceny i sezonu";0;1;195;0,051;0,221
+"ziemniak.sklep";61;"ziemniak.sklep";"Miejsce zakupu";"Z ogródka/bezpoœrednio od rolnika";"Hipermarket/supermarket";0;1;172;0,458;0,307
+"ziemniak.opakowanie";62;"ziemniak.opakowanie";"Wygoda opakowania";"Z ziemi luzem";"Myte w worku";0;1;172;0,415;0,316
+"ziemniak.obrobka";63;"ziemniak.obrobka";"Czy Pana Pani zdaniem ziemniaki s¹ trudne w obróbce ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;1,964;1,105
+"ziemniak.potrawy";64;"ziemniak.potrawy";"Czy Pana Pani zdaniem ziemniaki nadaj¹ siê do przygotowania wielu potraw ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;4,41;0,81
+"ziemniak.zdrowotnosc";65;"ziemniak.zdrowotnosc";"Czy Pana Pani zdaniem ziemniaki maj¹ korzystny wp³yw na zdrowie ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;3,651;0,856
+"ziemniak.smak";66;"ziemniak.smak";"Czy Pana Pani zdaniem ziemniaki dostêpne na polskim rynku s¹ smaczne ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;4,256;0,736
+"ziemniak.jakosc";67;"ziemniak.jakosc";"Czy Pana Pani zdaniem ziemniaki dostêpne na polskim rynku maj¹ dobr¹ jakoœæ ";"Zdecydowanie nie";"Zdecydowanie tak";2;5;195;4,256;0,597
+"ziemniak.produkty";68;"ziemniak.produkty";"Ró¿norodnoœæ preferowanych produktów";"Ma³a";"Du¿a";0;1;195;0,424;0,307
+"pomidor.cena";69;"pomidor.cena";"W jakim stopniu cena jest wa¿na dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;182;6,418;2,165
+"pomidor.miejsce";70;"pomidor.miejsce";"W jakim stopniu miejsce zakupu jest wa¿ne dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;182;5,83;2,615
+"pomidor.swiezosc";71;"pomidor.swiezosc";"W jakim stopniu œwie¿oœæ jest wa¿na dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";6;10;182;9,11;1,137
+"pomidor.rodzaj";72;"pomidor.rodzaj";"W jakim stopniu odmiana pomidorów jest wa¿na dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;182;6,604;2,483
+"pomidor.kraj";73;"pomidor.kraj";"W jakim stopniu kraj pochodzenia jest wa¿ny dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;182;5,643;2,902
+"pomidor.barwa";74;"pomidor.barwa";"W jakim stopniu kolor skórki jest wa¿ny dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;182;7,725;2,092
+"pomidor.kwasnosc";75;"pomidor.kwasnosc";"Jakie pomidory Pan Pani wybiera ze wzglêdu na smak ";"S³odkie";"Kwaœne";1;7;182;3,137;1,247
+"pomidor.miekkosc";76;"pomidor.miekkosc";"W jakim stopniu miêkkoœæ pomidorów jest wa¿na dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;182;7,11;2,038
+"pomidor.spozycie";77;"pomidor.spozycie";"Spo¿ycie pomidorów";"Nigdy";"2-3 razy dziennie";0;1;195;0,109;0,13
+"pomidor.okres";78;"pomidor.okres";"Sezonowoœæ/promocja przy zakupie";"Niezale¿nie od ceny i sezonu";"Zale¿nie od ceny i sezonu";0;1;195;0,292;0,456
+"pomidor.sklep";79;"pomidor.sklep";"Miejsce zakupu";"Z ogródka/bezpoœrednio od rolnika";"Hipermarket/supermarket";0;1;182;0,543;0,304
+"pomidor.obrobka";80;"pomidor.obrobka";"Czy Pana Pani zdaniem pomidory s¹ trudne w obróbce ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;1,718;0,895
+"pomidor.potrawy";81;"pomidor.potrawy";"Czy Pana Pani zdaniem pomidory nadaj¹ siê do przygotowania wielu potraw ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;4,487;0,802
+"pomidor.zdrowotnosc";82;"pomidor.zdrowotnosc";"Czy Pana Pani zdaniem pomidory maj¹ korzystny wp³yw na zdrowie ";"Zdecydowanie nie";"Zdecydowanie tak";3;5;195;4,574;0,616
+"pomidor.smak";83;"pomidor.smak";"Czy Pana Pani zdaniem pomidory dostêpne na polskim rynku s¹ smaczne ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;4,344;0,753
+"pomidor.jakosc";84;"pomidor.jakosc";"Czy Pana Pani zdaniem pomidory dostêpne na polskim rynku maj¹ dobr¹ jakoœæ ";"Zdecydowanie nie";"Zdecydowanie tak";2;5;195;4,262;0,779
+"pomidor.produkty";85;"pomidor.produkty";"Ró¿norodnoœæ preferowanych produktów";"Ma³a";"Du¿a";0;1;195;0,506;0,196
+"jablko.cena";86;"jablko.cena";"W jakim stopniu cena jest wa¿na dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;187;5,684;2,636
+"jablko.miejsce";87;"jablko.miejsce";"W jakim stopniu miejsce zakupu jest wa¿ne dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;187;5,588;2,562
+"jablko.swiezosc";88;"jablko.swiezosc";"W jakim stopniu œwie¿oœæ jest wa¿na dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;187;8,337;1,722
+"jablko.rodzaj";89;"jablko.rodzaj";"W jakim stopniu odmiana jab³ek jest wa¿na dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;187;7,444;2,197
+"jablko.kraj";90;"jablko.kraj";"W jakim stopniu kraj pochodzenia jest wa¿ny dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;187;6,743;2,803
+"jablko.barwa";91;"jablko.barwa";"W jakim stopniu kolor skórki jest wa¿ny dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;187;7,144;2,388
+"jablko.miekkosc";92;"jablko.miekkosc";"W jakim stopniu miêkkoœæ jab³ek jest wa¿na dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;187;7,342;2,367
+"jablko.kwasnosc";93;"jablko.kwasnosc";"Jakie jab³ka Pan Pani wybiera ze wzglêdu na smak ";"S³odkie";"Kwaœne";1;7;187;3,759;1,763
+"jablko.spozycie";94;"jablko.spozycie";"Spo¿ycie jab³ek";"Nigdy";"2-3 razy dziennie";0;1;195;0,139;0,157
+"jablko.okres";95;"jablko.okres";"Sezonowoœæ/promocja przy zakupie";"Niezale¿nie od ceny i sezonu";"Zale¿nie od ceny i sezonu";0;1;195;0,154;0,362
+"jablko.sklep";96;"jablko.sklep";"Miejsce zakupu";"Z ogródka/bezpoœrednio od rolnika";"Hipermarket/supermarket";0;1;187;0,5;0,311
+"jablko.obrobka";97;"jablko.obrobka";"Czy Pana Pani zdaniem jab³ka s¹ trudne w obróbce ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;1,718;0,895
+"jablko.potrawy";98;"jablko.potrawy";"Czy Pana Pani zdaniem jab³ka nadaj¹ siê do przygotowania wielu potraw ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;3,723;1,212
+"jablko.zdrowotnosc";99;"jablko.zdrowotnosc";"Czy Pana Pani zdaniem jab³ka maj¹ korzystny wp³yw na zdrowie ";"Zdecydowanie nie";"Zdecydowanie tak";3;5;195;4,569;0,6
+"jablko.smak";100;"jablko.smak";"Czy Pana Pani zdaniem jab³ka dostêpne na polskim rynku s¹ smaczne ";"Zdecydowanie nie";"Zdecydowanie tak";2;5;195;4,6;0,569
+"jablko.jakosc";101;"jablko.jakosc";"Czy Pana Pani zdaniem jab³ka dostêpne na polskim rynku maj¹ dobr¹ jakoœæ ";"Zdecydowanie nie";"Zdecydowanie tak";3;5;195;4,6;0,531
+"jablko.produkty";102;"jablko.produkty";"Ró¿norodnoœæ preferowanych produktów";"Ma³a";"Du¿a";0;1;195;0,431;0,268
+"pomarancza.cena";103;"pomarancza.cena";"W jakim stopniu cena jest wa¿na dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;178;6,798;2,349
+"pomarancza.miejsce";104;"pomarancza.miejsce";"W jakim stopniu miejsce zakupu jest wa¿ne dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;178;4,809;2,616
+"pomarancza.swiezosc";105;"pomarancza.swiezosc";"W jakim stopniu œwie¿oœæ jest wa¿na dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";1;10;178;8,236;1,674
+"pomarancza.rodzaj";106;"pomarancza.rodzaj";"W jakim stopniu wielkoœæ pomarañczy jest wa¿ny dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;178;6,135;2,241
+"pomarancza.kraj";107;"pomarancza.kraj";"W jakim stopniu kraj pochodzenia jest wa¿ny dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;178;4,697;2,856
+"pomarancza.barwa";108;"pomarancza.barwa";"W jakim stopniu kolor skórki jest wa¿ny dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;178;6,461;2,489
+"pomarancza.miekkosc";109;"pomarancza.miekkosc";"W jakim stopniu miêkkoœæ pomarañczy jest wa¿na dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";2;10;178;7,264;1,872
+"pomarancza.kwasnosc";110;"pomarancza.kwasnosc";"Jakie pomarañcze Pan Pani wybiera ze wzglêdu na smak ";"S³odkie";"Kwaœne";1;7;178;2,747;1,663
+"pomarancza.spozycie";111;"pomarancza.spozycie";"Spo¿ycie pomarañczy";"Nigdy";"2-3 razy dziennie";0;1;195;0,123;0,153
+"pomarancza.okres";112;"pomarancza.okres";"Sezonowoœæ/promocja przy zakupie";"Niezale¿nie od ceny i sezonu";"Zale¿nie od ceny i sezonu";0;1;195;0,462;0,5
+"pomarancza.sklep";113;"pomarancza.sklep";"Miejsce zakupu";"Z ogródka/bezpoœrednio od rolnika";"Hipermarket/supermarket";0,25;1;178;0,76;0,25
+"pomarancza.obrobka";114;"pomarancza.obrobka";"Czy Pana Pani zdaniem pomarañcze s¹ trudne w obróbce ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;2,41;1,165
+"pomarancza.potrawy";115;"pomarancza.potrawy";"Czy Pana Pani zdaniem pomarañcze nadaj¹ siê do przygotowania wielu potraw ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;2,559;1,089
+"pomarancza.zdrowotnosc";116;"pomarancza.zdrowotnosc";"Czy Pana Pani zdaniem pomarañcze maj¹ korzystny wp³yw na zdrowie ";"Zdecydowanie nie";"Zdecydowanie tak";3;5;195;4,354;0,668
+"pomarancza.smak";117;"pomarancza.smak";"Czy Pana Pani zdaniem pomarañcze dostêpne na polskim rynku s¹ smaczne ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;3,851;0,87
+"pomarancza.jakosc";118;"pomarancza.jakosc";"Czy Pana Pani zdaniem pomarañcze dostêpne na polskim rynku maj¹ dobr¹ jakoœæ ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;3,728;0,845
+"pomarancza.produkty";119;"pomarancza.produkty";"Ró¿norodnoœæ preferowanych produktów";"Ma³a";"Du¿a";0;1;195;0,521;0,268
+"makaron.cena";120;"makaron.cena";"W jakim stopniu cena jest wa¿na dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;187;6,032;2,563
+"makaron.miejsce";121;"makaron.miejsce";"W jakim stopniu miejsce zakupu jest wa¿ne dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;187;3,091;2,617
+"makaron.swiezosc";122;"makaron.swiezosc";"W jakim stopniu œwie¿oœæ jest wa¿na dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;187;4,738;2,991
+"makaron.rodzaj";123;"makaron.rodzaj";"W jakim stopniu kszta³t makaronu jest wa¿ny dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;187;6,861;2,432
+"makaron.kraj";124;"makaron.kraj";"W jakim stopniu kraj pochodzenia jest wa¿ny dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;187;3,872;3,139
+"makaron.barwa";125;"makaron.barwa";"W jakim stopniu kolor makaronu jest wa¿ny dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;187;5,535;2,838
+"makaron.marka";126;"makaron.marka";"W jakim stopniu marka producenta jest wa¿na dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;187;5,957;2,725
+"makaron.spozycie";127;"makaron.spozycie";"Spo¿ycie makaronu";"Nigdy";"2-3 razy dziennie";0;1;195;0,096;0,101
+"makaron.okres";128;"makaron.okres";"Sezonowoœæ/promocja przy zakupie";"Niezale¿nie od ceny i sezonu";"Zale¿nie od ceny i sezonu";0;1;195;0,021;0,142
+"makaron.sklep";129;"makaron.sklep";"Miejsce zakupu";"Robiê samodzielnie";"Hipermarket/supermarket";0;1;187;0,813;0,205
+"makaron.obrobka";130;"makaron.obrobka";"Czy Pana Pani zdaniem makaron jest trudny do samodzielnego przygotowania ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;1,559;0,958
+"makaron.potrawy";131;"makaron.potrawy";"Czy Pana Pani zdaniem makarony nadaj¹ siê do przygotowania wielu potraw ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;4,631;0,671
+"makaron.zdrowotnosc";132;"makaron.zdrowotnosc";"Czy Pana Pani zdaniem makarony maj¹ korzystny wp³yw na zdrowie ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;3,041;0,907
+"makaron.smak";133;"makaron.smak";"Czy Pana Pani zdaniem makarony dostêpne na polskim rynku s¹ smaczne ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;4,164;0,728
+"makaron.jakosc";134;"makaron.jakosc";"Czy Pana Pani zdaniem makarony dostêpne na polskim rynku maj¹ dobr¹ jakoœæ ";"Zdecydowanie nie";"Zdecydowanie tak";2;5;195;4,118;0,754
+"platki.cena";135;"platki.cena";"W jakim stopniu cena jest wa¿na dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;171;6,579;2,415
+"platki.miejsce";136;"platki.miejsce";"W jakim stopniu miejsce zakupu jest wa¿ne dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;171;2,901;2,506
+"platki.swiezosc";137;"platki.swiezosc";"W jakim stopniu œwie¿oœæ jest wa¿na dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;171;4,982;3,071
+"platki.rodzaj";138;"platki.rodzaj";"W jakim stopniu smak jest wa¿ny dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;171;8,17;1,956
+"platki.kraj";139;"platki.kraj";"W jakim stopniu kraj pochodzenia jest wa¿ny dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;171;3,135;2,857
+"platki.blonnik";140;"platki.blonnik";"W jakim stopniu zawartoœæ b³onnika jest wa¿ny dla Pana Pani przy ich wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;171;5,228;3,091
+"platki.marka";141;"platki.marka";"W jakim stopniu marka producenta jest wa¿na dla Pana Pani przy ich wyborze";"Wcale";"W najwy¿szym stopniu";0;10;171;5,947;2,779
+"platki.sklep";142;"platki.sklep";"W jakim miejscu Pan Pani kupuje je najczêœciej";"Robiê samodzielnie";"Hipermarket/supermarket";0;1;171;0,813;0,219
+"platki.spozycie";143;"platki.spozycie";"Spo¿ycie p³atków";"Nigdy";"2-3 razy dziennie";0;1;195;0,209;0,235
+"platki.obrobka";144;"platki.obrobka";"Czy Pana Pani zdaniem p³atki s¹ trudne do samodzielnego przygotowania ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;1,41;0,945
+"platki.potrawy";145;"platki.potrawy";"Czy Pana Pani zdaniem p³atki nadaj¹ siê do przygotowania wielu potraw ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;2,349;1,202
+"platki.zdrowotnosc";146;"platki.zdrowotnosc";"Czy Pana Pani zdaniem p³atki maj¹ korzystny wp³yw na zdrowie ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;3,503;1,137
+"platki.smak";147;"platki.smak";"Czy Pana Pani zdaniem p³atki dostêpne na polskim rynku s¹ smaczne ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;4,108;0,864
+"platki.jakosc";148;"platki.jakosc";"Czy Pana Pani zdaniem p³atki dostêpne na polskim rynku maj¹ dobr¹ jakoœæ ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;4,031;0,824
+"pieczywo.cena";149;"pieczywo.cena";"W jakim stopniu cena jest wa¿na dla Pana Pani przy jego wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;191;5,707;2,623
+"pieczywo.miejsce";150;"pieczywo.miejsce";"W jakim stopniu miejsce zakupu jest wa¿ne dla Pana Pani przy jego wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;191;6,984;2,547
+"pieczywo.swiezosc";151;"pieczywo.swiezosc";"W jakim stopniu œwie¿oœæ jest wa¿na dla Pana Pani przy jego wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;191;9,424;1,207
+"pieczywo.rodzaj";152;"pieczywo.rodzaj";"W jakim stopniu rodzaj pieczywa jest wa¿ny dla Pana Pani przy jego wyborze ";"Wcale";"W najwy¿szym stopniu";4;10;191;8,901;1,25
+"pieczywo.kraj";153;"pieczywo.kraj";"W jakim stopniu kraj pochodzenia jest wa¿ny dla Pana Pani przy jego wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;191;6,602;3,464
+"pieczywo.barwa";154;"pieczywo.barwa";"W jakim stopniu kolor pieczywa jest wa¿ny dla Pana Pani przy jego wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;191;8,12;1,939
+"pieczywo.ziarna";155;"pieczywo.ziarna";"W jakim stopniu zawartoœæ ziaren jest wa¿na dla Pana Pani przy jego wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;191;7,476;2,565
+"pieczywo.blonnik";156;"pieczywo.blonnik";"W jakim stopniu zawartoœæ b³onnika jest wa¿na dla Pana Pani przy jego wyborze ";"Wcale";"W najwy¿szym stopniu";0;10;191;5,827;3,173
+"pieczywo.sklep";157;"pieczywo.sklep";"Miejsce zakupu";"Robiê samodzielnie";"Hipermarket/supermarket";0;1;191;0,469;0,253
+"pieczywo.spozycie";158;"pieczywo.spozycie";"Spo¿ycie pieczywa";"Nigdy";"2-3 razy dziennie";0;1;195;0,187;0,17
+"pieczywo.opakowanie";159;"pieczywo.opakowanie";"Wygoda opakowania";"W ca³oœci bez opakowania";"Krojony w opakowaniu";0;1;187;0,249;0,426
+"pieczywo.obrobka";160;"pieczywo.obrobka";"Czy Pana Pani zdaniem pieczywo jest trudne w samodzielnym przygotowaniu ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;2,108;1,317
+"pieczywo.potrawy";161;"pieczywo.potrawy";"Czy Pana Pani zdaniem pieczywo nadaje siê do przygotowania wielu potraw ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;2,949;1,174
+"pieczywo.zdrowotnosc";162;"pieczywo.zdrowotnosc";"Czy Pana Pani zdaniem pieczywo ma korzystny wp³yw na zdrowie ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;3,369;0,962
+"pieczywo.smak";163;"pieczywo.smak";"Czy Pana Pani zdaniem pieczywo dostêpne na polskim rynku jest smaczne ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;4,379;0,806
+"pieczywo.jakosc";164;"pieczywo.jakosc";"Czy Pana Pani zdaniem pieczywo dostêpne na polskim rynku ma dobr¹ jakoœæ ";"Zdecydowanie nie";"Zdecydowanie tak";1;5;195;4,338;0,759
